@@ -45,7 +45,7 @@ func SendError(msg interface{}, w http.ResponseWriter, code int) {
 		http.Error(w, "JSON Marshal Error", http.StatusInternalServerError)
 		return
 	}
-	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
 	fmt.Println(string(json))
 	w.Write(json)
 }
@@ -62,7 +62,7 @@ func SendSuccess(w http.ResponseWriter, data interface{}) {
 		http.Error(w, "JSON Marshal Error", http.StatusInternalServerError)
 		return
 	}
-	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
 	fmt.Println(string(json))
 	w.Write(json)
 }
