@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Golang upload</title>
+    <title>Create memo</title>
 </head>
 <body>
-<form id="uploadForm" method="post" enctype="multipart/form-data" action="/upload">
-    <p>Golang upload</p>
-    <input type="file" id="file" name="file"/>
-    <input type="submit" value="upload"/>
+<form id="createMemo" method="post" action="/memo">
+    <p>create memo</p>
+    <input type="text" id="content" name="content"/>
+    <input type="submit" value="save"/>
 </form>
 </body>
 </html>
