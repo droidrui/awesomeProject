@@ -7,19 +7,18 @@ import (
 	"net/http"
 	"github.com/julienschmidt/httprouter"
 	"app/mw"
-	"app/controller"
 )
 
 var Router *httprouter.Router
 
+func init() {
+	Router = httprouter.New()
+}
+
 func Run() {
 	fmt.Println(time.Now(), "Running HTTP", httpAddress())
 
-	Router = httprouter.New()
-
 	log.Fatal(http.ListenAndServe(httpAddress(), handleMW(Router)))
-
-	controller.Load()
 }
 
 func httpAddress() string {

@@ -9,6 +9,6 @@ import (
 
 func init() {
 	server.Router.GET("/", func(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-		fmt.Fprint(w, "Welcome!\n")
+		fmt.Fprintln(w, "Welcome!")
 	})
 }

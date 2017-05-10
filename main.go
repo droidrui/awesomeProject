@@ -4,6 +4,7 @@ import (
 	"runtime"
 	"app/db"
 	"app/server"
+	"app/controller"
 )
 
 func init() {
@@ -12,5 +13,6 @@ func init() {
 
 func main() {
 	db.Connect()
+	controller.Load()
 	server.Run()
 }
