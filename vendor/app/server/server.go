@@ -33,8 +33,8 @@ func handleMW(h http.Handler) http.Handler {
 	return h
 }
 
-func SendError(err error, w http.ResponseWriter, code int) {
-	log.Println(err)
+func SendError(msg interface{}, w http.ResponseWriter, code int) {
+	log.Println(msg)
 	resp := &model.Response{
 		Code: code,
 		Msg:  errcode.ErrMap[code],

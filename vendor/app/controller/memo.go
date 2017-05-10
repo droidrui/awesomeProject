@@ -27,6 +27,10 @@ func init() {
 func createMemo() httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 		content := r.FormValue("content")
+		if content == "" {
+			server.SendError("content is nil", w, errcode.PARAM_INVALID)
+			return
+		}
 		result, err := db.SQL.Exec("INSERT INTO memo(content) VALUE(?)", content)
 		if err != nil {
 			server.SendError(err, w, errcode.SERVER_ERROR)
