@@ -56,3 +56,9 @@ func getMemo() httprouter.Handle {
 
 	}
 }
+
+func updateMemo() httprouter.Handle {
+	return func(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+
+	}
+}

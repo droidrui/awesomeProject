@@ -1,26 +1,26 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;awesomeProject&gt;">
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/../memo" />
+      <root url="file://$PROJECT_DIR$/../im_server" />
+      <root url="file://$PROJECT_DIR$/../tour" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
       <root url="file://$PROJECT_DIR$/../cloudnote" />
       <root url="file://$PROJECT_DIR$/../im_client" />
       <root url="file://$PROJECT_DIR$/../github.com" />
-      <root url="file://$PROJECT_DIR$/../tour" />
       <root url="file://$PROJECT_DIR$/../golang.org" />
       <root url="file://$PROJECT_DIR$/../google.golang.org" />
-      <root url="file://$PROJECT_DIR$/../memo" />
-      <root url="file://$PROJECT_DIR$/../im_server" />
     </CLASSES>
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/../memo" />
+      <root url="file://$PROJECT_DIR$/../im_server" />
+      <root url="file://$PROJECT_DIR$/../tour" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
       <root url="file://$PROJECT_DIR$/../cloudnote" />
       <root url="file://$PROJECT_DIR$/../im_client" />
       <root url="file://$PROJECT_DIR$/../github.com" />
-      <root url="file://$PROJECT_DIR$/../tour" />
       <root url="file://$PROJECT_DIR$/../golang.org" />
       <root url="file://$PROJECT_DIR$/../google.golang.org" />
-      <root url="file://$PROJECT_DIR$/../memo" />
-      <root url="file://$PROJECT_DIR$/../im_server" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />
